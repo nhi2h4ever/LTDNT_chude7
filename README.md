@@ -11,20 +11,21 @@ Nhóm thực hiện: Nguyễn Thái Hoàng (106230011), Lê Trương Uyển Nhi 
 ## Cấu trúc mã nguồn
 
 ```
-lib/
-├── main.dart                  # Khởi chạy ứng dụng
-├── models/song.dart           # Dữ liệu cố định của bài hát
-├── pages/player_page.dart     # Nơi giữ trạng thái, xử lý sự kiện bằng setState
-└── widgets/song_card.dart     # Thẻ bài hát: nhận thao tác, báo lên qua callback
-test/
-├── song_card_test.dart        # Kiểm thử callback của SongCard
-└── player_page_test.dart      # Kiểm thử luồng sự kiện -> trạng thái -> giao diện
+demo/
+├── lib/
+│   ├── main.dart                  # Khởi chạy ứng dụng
+│   ├── models/song.dart           # Dữ liệu cố định của bài hát
+│   ├── pages/player_page.dart     # Nơi giữ trạng thái, xử lý sự kiện bằng setState
+│   └── widgets/song_card.dart     # Thẻ bài hát: nhận thao tác, báo lên qua callback
+└── test/
+    ├── song_card_test.dart        # Kiểm thử callback của SongCard
+    └── player_page_test.dart      # Kiểm thử luồng sự kiện -> trạng thái -> giao diện
 ```
 
 | File | Người phụ trách |
 |---|---|
-| `lib/models/song.dart`, `lib/pages/player_page.dart`, `lib/main.dart`, `test/player_page_test.dart` | Lê Trương Uyển Nhi |
-| `lib/widgets/song_card.dart`, `test/song_card_test.dart`, `README.md` | Nguyễn Thái Hoàng |
+| `demo/lib/models/song.dart`, `demo/lib/pages/player_page.dart`, `demo/lib/main.dart`, `demo/test/player_page_test.dart` | Lê Trương Uyển Nhi |
+| `demo/lib/widgets/song_card.dart`, `demo/test/song_card_test.dart`, `README.md` | Nguyễn Thái Hoàng |
 
 ## Luồng tương tác
 
@@ -60,4 +61,4 @@ flutter test
 
 | Ban đầu | Bước 1 | Bước 2 | Bước 3 | Bước 4 |
 |---|---|---|---|---|
-| ![](docs/screenshots/0_ban_dau.png) | ![](docs/screenshots/1_cham_the.png) | ![](docs/screenshots/2_nhan_dup.png) | ![](docs/screenshots/3_am_luong_0.png) | ![](docs/screenshots/4_snackbar.png) |
+| ![](demo/docs/screenshots/0_ban_dau.png) | ![](demo/docs/screenshots/1_cham_the.png) | ![](demo/docs/screenshots/2_nhan_dup.png) | ![](demo/docs/screenshots/3_am_luong_0.png) | ![](demo/docs/screenshots/4_snackbar.png) |
